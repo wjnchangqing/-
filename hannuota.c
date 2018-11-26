@@ -1,5 +1,5 @@
 #include<stdio.h>
-//ÒÆ¶¯º¯Êı
+//ç§»åŠ¨å‡½æ•°
 void move(char a,char b)
 {
     printf("%c->%c\n",a,b);
@@ -12,17 +12,17 @@ void hannuota(int n, char a, char b, char c)
     }
     else
     {
-        hannuota(n-1,a,c,b);
-        move(a,c);                  //µÚn²ãÖ±½Óa->c
-        hannuota(n-1,b,a,c);        //½«n-1²ã´Ób°áµ½c
+        hannuota(n-1,a,c,b);        //ç¬¬n-1å±‚ä»aåˆ°b
+        move(a,c);                  //ç¬¬nå±‚ç›´æ¥a->c
+        hannuota(n-1,b,a,c);        //å°†n-1å±‚ä»båˆ°c
     }
 }
 int main()
 {
     int n;
-    printf("ÇëÊäÈëÅÌ×ÓÊı£º");
-    scanf("%d", &n); //ÓĞ¶àÉÙ²ãËş
-    printf("ÒÆ¶¯²½ÖèÎª£º\n");
+    printf("è¯·è¾“å…¥ç›˜å­æ•°ï¼š");
+    scanf("%d", &n); //æœ‰å¤šå°‘å±‚å¡”
+    printf("ç§»åŠ¨æ­¥éª¤ä¸ºï¼š\n");
     hannuota(n,'A','B','C');
     return 0;
 }
